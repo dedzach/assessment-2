@@ -44,12 +44,12 @@ greaterThanFive (6)
 //CODE HERE
 
 function findZWords (word) {
-  if (word[1] === z) {
+  if (word[0] === 'z') {
     console.log(`the name begins with Z`)
   } else { console.log(`the name does not begin with Z`)}
 }
 
-findZWords('Sarah')
+findZWords('Zarah')
 
 //////////////////PROBLEM 4////////////////////
 /*

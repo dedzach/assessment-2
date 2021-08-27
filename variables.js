@@ -44,9 +44,6 @@ console.log(faveNum)
 */
 
 //CODE HERE
-let faveNumArr = []
-for (i = 0; i = 69; i++ ) { 
- faveNumArr.push()
+for (i = 0; i  < 4; i++ ) { 
+    console.log(faveNum)
 }
-
-console.log(favNumArr)

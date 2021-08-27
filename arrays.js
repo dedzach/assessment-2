@@ -28,8 +28,8 @@ console.log(colorCopy)
 
 
 const numbers = [1, 2, 3, 4, 5]
-let middleNums = numbers.slice(0, 4)
-middleNums.shift(0)
+let middleNums = numbers.slice(1, 4)
+
 // console.log(middleNums)
 // console.log(numbers)
 

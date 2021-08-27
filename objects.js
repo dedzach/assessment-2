@@ -19,14 +19,11 @@ const me = {
   firstName: 'Zach',
   state: 'Texas',
   age: 25,
-  greeter: 'Hello! My name is ${firstName} and I live in ${state}'
+  greeter: function () {
+    console.log(`Hello! My name is ${this.firstName} and I live in ${this.state} `)
+  }
 }
-
-console.log(me.greeter)
-
-
-
-
+me.greeter()
 
 
 //////////////////PROBLEM 2////////////////////
@@ -53,16 +50,36 @@ console.log(me.greeter)
   }
 */
 
-//CODE HERE
+// CODE HERE
+
+
+// class carFactory {
+//     this.make = make;
+//     this.model = model;
+//     this.year = year; 
+// } {
+//   if (year > 2018) {
+//     console.log(isNew = true)
+//   } else {console.log(isNew = False)}
+// }
+
+// let car1 = carFactory(Toyota, Camry, 2018)
 
 
 function carFactory (make, model, year) {
-  make = 'make'
-  model = 'model'
-  year = 'year'
-  const carFactory {
-    make: 'Toyota',
-    model: 'Camry',
-    year: '2020'
+  let car = {
+  make: make,
+  model: model,
+  year: year,
   }
+  if (year > 2018) {
+    car.isNew = true
+  } else { 
+    car.isNew = false 
+  }
+  return car
 }
+
+console.log(carFactory('Toyota', 'Camry', 2017))
+
+
